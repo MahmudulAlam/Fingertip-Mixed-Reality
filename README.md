@@ -49,3 +49,8 @@ Open the ```'Unity Mixed Reality With Finger Gesture'``` environment and hit pla
 </p>
 
 Bring your hand in front of the webcam and interact with the virtual object using your finger gesture.
+
+## Demo
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/37298971/60720908-07e19300-9f4e-11e9-8e38-f322d81a9abd.gif" width="650">
+</p>
