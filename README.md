@@ -36,7 +36,7 @@ as an image target. The ```marker``` folder contains the pdf of the designed mar
 
 ## How to Use
 To run the server side with tracker directly run ```'server_track.py'``` and for without tracker run ```'server.py'```
-It will wait until the client side (Unity) is starting to send mages to the server. 
+It will wait until the client side (Unity) is starting to send images to the server. 
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/37298971/57572729-97802f00-7440-11e9-9c5c-fa4d6427d8ec.png" width="700">
@@ -52,5 +52,5 @@ Bring your hand in front of the webcam and interact with the virtual object usin
 
 ## Demo
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/37298971/60720908-07e19300-9f4e-11e9-8e38-f322d81a9abd.gif" width="650">
+  <img src="https://user-images.githubusercontent.com/37298971/60720908-07e19300-9f4e-11e9-8e38-f322d81a9abd.gif" width="700">
 </p>
