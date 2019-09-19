@@ -1,13 +1,11 @@
-# Fingertip-Mixed-Reality
-In this project, a thumb and index fingertip detection and tracking system for seamless interaction with a virtual 3D object in the 
-MR environment is developed. First, a two-stage convolutional neural network (CNN) is used to detect hand and fingertip and using the 
-information of the fingertip position, the scale of a virtual 3D object is controlled. 
+# Interactive System for Virtual Environment
+A convolutional neural network (CNN) based thumb and index fingertip detection and tracking system are developed here for seamless
+interaction with a virtual 3D object in the virtual environment. First, a two-stage CNN method is employed to detect hand and fingertip 
+and using the information of the fingertip position, the geometry of a virtual 3D object is transformed.
 
 ## Dataset
 To train the hand and fingertip detection model two different datasets are used. One is self-made publicly released dataset called
-[TI1K Dataset](https://github.com/MahmudulAlam/TI1K-Dataset) and another one is [Scut-Ego-Gesture Dataset](http://www.hcii-lab.net/data/SCUTEgoGesture/index.htm). 
-
-[![Download](https://img.shields.io/badge/download-dataset-blueviolet.svg?longCache=true&style=flat)](https://github.com/MahmudulAlam/TI1K-Dataset/archive/master.zip)
+[TI1K Dataset](https://github.com/MahmudulAlam/TI1K-Dataset) which contains 1000 images with the annotations of hand and fingertip position and another one is [Scut-Ego-Gesture Dataset](http://www.hcii-lab.net/data/SCUTEgoGesture/index.htm). 
 
 ## Requirements
 - [x] TensorFlow-GPU==1.11.0
@@ -27,16 +25,19 @@ Here is a brief overview of the system where a virtual 3D object is scaled up in
 </p>
 
 ## Experimental-Setup
-The experimental setup has a server and client side. Fingertip detection and tracking and all other machine learning stuff are programmed in the server side using Python. In the client side, the virtual environment is created using Unity along with Vuforia software development kit (SDK). To locate and track a virtual object using the webcam, Vuforia needs marker assistance. For that purpose, a marker is designed which works
-as an image target. The ```marker``` folder contains the pdf of the designed marker. To use the system print a copy of the marker.
+The experimental setup has a server and client-side. Fingertip detection and tracking and all other machine learning stuff are 
+programmed in the server-side using Python. In the client-side, the virtual environment is created using Unity along with Vuforia 
+software development kit (SDK). To locate and track a virtual object using the webcam, Vuforia needs marker assistance. For that 
+purpose, a marker is designed which works as an image target. The ```marker``` folder contains the pdf of the designed marker. To use
+the system print a copy of the marker.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/37298971/57572552-c9dc5d00-743d-11e9-9f1c-fcf9d97517b5.jpg" width="800">
 </p>
 
 ## How to Use
-To run the server side with tracker directly run ```'server_track.py'``` and for without tracker run ```'server.py'```
-It will wait until the client side (Unity) is starting to send images to the server. 
+To run the server-side with tracker directly run ```'server_track.py'``` and for without tracker run ```'server.py'```
+It will wait until the client-side (Unity) is starting to send images to the server. 
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/37298971/57572729-97802f00-7440-11e9-9c5c-fa4d6427d8ec.png" width="700">
