@@ -1,1 +1,0 @@
-If you want to paint the trees on your terrain use the assembled prefabs in the Terrain Trees/Prefab folder.
