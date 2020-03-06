@@ -46,26 +46,30 @@ interaction.
   <img src="https://user-images.githubusercontent.com/37298971/75995036-0675c980-5f26-11ea-967a-10b9fe45853d.gif" title="affine transformation"width="400" />
 </p>
 
+
 ## Experimental Setup
 The experimental setup has a server and client-side. Fingertip detection and tracking and all other machine learning stuff are 
 programmed in the server-side using Python. In the client-side, the virtual environment is created using Unity along with Vuforia 
 software development kit (SDK). To locate and track a virtual object using the webcam, Vuforia needs marker assistance. For that 
-purpose, a marker is designed which works as an image target. The ```marker``` folder contains the pdf of the designed marker. To use
-the system print a copy of the marker.
+purpose, a marker is designed which works as an image target. The [```marker/```](https://github.com/MahmudulAlam/Fingertip-Mixed-Reality/tree/master/marker) folder contains the pdf of the designed marker. To use the system print a copy of the marker.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/37298971/57572552-c9dc5d00-743d-11e9-9f1c-fcf9d97517b5.jpg" width="800">
 </p>
 
+
 ## How to Use
-To run the server-side with tracker directly run ```'server_track.py'``` and for without tracker run ```'server.py'```
+First, to run the server-side with tracker directly run ```'server_track.py'``` and for without tracker run ```'server.py'```
 It will wait until the client-side (Unity) is starting to send images to the server. 
+```
+directory > python server_track.py
+```
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/37298971/57572729-97802f00-7440-11e9-9c5c-fa4d6427d8ec.png" width="700">
 </p>
 
-Open the ```'Unity Mixed Reality With Finger Gesture'``` environment and hit play button. Make sure a webcam is connected. 
+Open the ```'Unity Affine Transformation'``` environment using [```Unity```](https://unity3d.com/get-unity/download) and hit play button. Make sure a webcam is connected. 
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/37298971/57572793-5b010300-7441-11e9-96cb-07bec8f818b1.png" width="700">
