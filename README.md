@@ -33,6 +33,9 @@ interaction.
   <img src="https://user-images.githubusercontent.com/37298971/78501859-96a26b00-777f-11ea-9f33-977ea8feda09.gif" width="640">
 </p>
 
+| <img src="https://user-images.githubusercontent.com/37298971/82154840-6d9eeb00-9892-11ea-986d-6314a21d5283.gif">  | <img src="https://user-images.githubusercontent.com/37298971/82154849-7abbda00-9892-11ea-84e9-4e1b5508c1e8.gif">  | <img src="https://user-images.githubusercontent.com/37298971/82154850-81e2e800-9892-11ea-8d7f-7d6830978a49.gif">  |
+|:-:|:-:|:-:|
+
 <!---
 <pre>
   <strong>                scale transformation                                  rotation transformation   </strong>
