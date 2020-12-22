@@ -37,6 +37,7 @@ Paper for the affine transformation of the virtual 3D object has been published 
   title={Detection and Tracking of Fingertips for Geometric Transformation of Objects in Virtual Environment},
   author={Alam, Mohammad Mahmudul and Rahman, SM Mahbubur},
   booktitle={2019 IEEE/ACS 16th International Conference on Computer Systems and Applications (AICCSA)},
+  address = {Abu Dhabi, United Arab Emirates},
   pages={1--8},
   year={2019},
   organization={IEEE}
