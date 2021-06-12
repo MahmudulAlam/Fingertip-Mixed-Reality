@@ -12,9 +12,10 @@ This is the version ```2.0``` that includes a more generalized affine transforma
 ## Paper
 Paper for the affine transformation of the virtual 3D object has been published in Virtual Reality & Intelligent Hardware, Elsevier Science Publishers in 2020. To get more detail, please go through the [```paper```](https://doi.org/10.1016/j.vrih.2020.10.001). Paper for the geometric transformation of the virtual object [```v1.0```](https://github.com/MahmudulAlam/Fingertip-Mixed-Reality/releases/tag/v1.0) has also been published. For more detail, please go through this [```paper```](https://ieeexplore.ieee.org/abstract/document/9035256). If you use the code or data from the project, please cite the following papers: 
 
+[![Paper](https://img.shields.io/badge/paper-ScienceDirect-orange.svg?longCache=true&style=flat)](https://doi.org/10.1016/j.vrih.2020.10.001)
+![](https://img.shields.io/badge/-v2.0-brightgreen)
 
-| [![Paper](https://img.shields.io/badge/paper-ScienceDirect-f2862e.svg?longCache=true&style=flat)](https://doi.org/10.1016/j.vrih.2020.10.001) 	|   ![](https://img.shields.io/badge/-v2.0-brightgreen)	| [***```Affine transformation of virtual 3D object using 2D localization of fingertips```***](https://www.sciencedirect.com/science/article/pii/S2096579620300917?via%3Dihub) 🔗 |
-|:-:	|:-:	| :-: |
+[***```Affine transformation of virtual 3D object using 2D localization of fingertips```***](https://www.sciencedirect.com/science/article/pii/S2096579620300917?via%3Dihub) 🔗
 
 ```
 @article{alam2020affine,
@@ -29,10 +30,10 @@ Paper for the affine transformation of the virtual 3D object has been published 
 }
 ```
 
-|  [![Paper](https://img.shields.io/badge/paper-IeeeXplore-blue.svg?longCache=true&style=flat)](https://ieeexplore.ieee.org/abstract/document/9035256) 	|  ![](https://img.shields.io/badge/-v1.0-brightgreen) 	| [***```Detection and Tracking of Fingertips for Geometric Transformation of Objects in Virtual Environment```***](https://ieeexplore.ieee.org/abstract/document/9035256) 🔗 |
-|:-:	|:-:	| :-:	|
+[![Paper](https://img.shields.io/badge/paper-IeeeXplore-blue.svg?longCache=true&style=flat)](https://ieeexplore.ieee.org/abstract/document/9035256)
+![](https://img.shields.io/badge/-v1.0-brightgreen)
 
-
+[***```Detection and Tracking of Fingertips for Geometric Transformation of Objects in Virtual Environment```***](https://ieeexplore.ieee.org/abstract/document/9035256) 🔗
 
 ```
 @inproceedings{alam2019detection,
