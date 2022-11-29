@@ -1,5 +1,8 @@
-# Affine Transformation of Virtual Object
+<h2 align="center">Affine Transformation of Virtual Object</h2>
+
+<p align="justify">
 A convolutional neural network (CNN) based thumb and index fingertip detection system are presented here for seamless interaction with a virtual 3D object in the virtual environment. First, a two-stage CNN is employed to detect the hand and fingertips, and using the information of the fingertip position, the scale, rotation, translation, and in general, the affine transformation of the virtual object is performed.
+</p>
 
 ## Update 
 This is the version ```2.0``` that includes a more generalized affine transformation of virtual objects in the virtual environment with more experimentation and analysis. Previous versions only include the geometric transformation of a virtual 3D object with respect to a finger gesture. To get the previous version visit [here](https://github.com/MahmudulAlam/Fingertip-Mixed-Reality/releases).
@@ -17,7 +20,7 @@ Paper for the affine transformation of the virtual 3D object has been published 
 
 [***```Affine transformation of virtual 3D object using 2D localization of fingertips```***](https://www.sciencedirect.com/science/article/pii/S2096579620300917?via%3Dihub) 🔗
 
-```
+```bibtex
 @article{alam2020affine,
   title={Affine transformation of virtual 3D object using 2D localization of fingertips},
   author={Alam, Mohammad Mahmudul and Rahman, SM Mahbubur},
@@ -35,7 +38,7 @@ Paper for the affine transformation of the virtual 3D object has been published 
 
 [***```Detection and Tracking of Fingertips for Geometric Transformation of Objects in Virtual Environment```***](https://ieeexplore.ieee.org/abstract/document/9035256) 🔗
 
-```
+```bibtex
 @inproceedings{alam2019detection,
   title={Detection and Tracking of Fingertips for Geometric Transformation of Objects in Virtual Environment},
   author={Alam, Mohammad Mahmudul and Rahman, SM Mahbubur},
@@ -80,7 +83,7 @@ The experimental setup has a server and client-side. Fingertip detection and tra
 ## How to Use
 First, to run the server-side directly run ```'server.py'```. It will wait until the client-side (Unity) is starting to send images to the server. 
 ```
-directory > python server_track.py
+directory > python server.py
 ```
 
 <p align="center">
