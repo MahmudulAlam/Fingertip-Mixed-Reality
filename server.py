@@ -9,9 +9,16 @@ import tensorflow as tf
 from yolo.detector import YOLO
 from fingertip import Fingertips
 
-graph = tf.get_default_graph()
-hand = YOLO(weights='weights/yolo.h5', threshold=0.5)
-fingertips = Fingertips(model='vgg', weights='weights/vgg16.h5')
+graph1, graph2 = tf.Graph(), tf.Graph()
+with graph1.as_default():
+    session1 = tf.Session()
+    with session1.as_default():
+        hand = YOLO(weights='weights/yolo.h5', threshold=0.5)
+
+with graph2.as_default():
+    session2 = tf.Session()
+    with session2.as_default():
+        fingertips = Fingertips(model='vgg', weights='weights/vgg16.h5')
 
 """ Initializing Parameters """
 dist = 0
@@ -75,14 +82,22 @@ def client_thread(client, address):
 
     while True:
         try:
-            data = client.recv(data_length)
+            #data = client.recv(data_length)
+            if hasattr(socket, "MSG_WAITALL"):
+                data = client.recv(data_length, socket.MSG_WAITALL)
+            else:
+                # Windows lacks MSG_WAITALL
+                data = b''
+                while len(data) < data_length:
+                    data += client.recv(data_length - len(data))
             if not data:
                 break
             image = preprocess(byte_data=data, mode=mode)
             image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
             height, width, _ = image.shape
-            with graph.as_default():
-                tl, br = hand.detect(image)
+            with graph1.as_default():
+                with session1.as_default():
+                    tl, br = hand.detect(image)
 
             if tl or br is not None:
                 xmin = tl[0]
@@ -96,8 +111,9 @@ def client_thread(client, address):
                 cropped_image = image[ymin:ymax + alpha, xmin:xmax + alpha]
                 cols, rows, _ = cropped_image.shape
                 cropped_image = cv2.resize(cropped_image, (128, 128))
-                with graph.as_default():
-                    position = fingertips.classify(image=cropped_image)
+                with graph2.as_default():
+                    with session2.as_default():
+                        position = fingertips.classify(image=cropped_image)
 
                 for i in range(0, len(position), 2):
                     position[i] = (position[i]) * rows
@@ -119,8 +135,8 @@ def client_thread(client, address):
                 tx = tx / 640
                 ty = ty / 480
 
-            cv2.imshow('', image)
-            cv2.waitKey(1)
+            #cv2.imshow('', image)
+            #cv2.waitKey(1)
         except ConnectionResetError:
             print("Connection Lost! :( ")
             break
